@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+<!--[if lt IE 9]> <script type="text/javascript" src="lib/js/html5shiv.js"> </script> <![endif]-->
+
+<head>
+	<meta charset=utf-8>
+	<title>Future Friendly Web Design for Libraries</title>
+
+	<!-- Google Chrome Frame for IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- mobile meta (hooray!) -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		
+
+<!-- Information
+======================
+-->	<meta name="author" content="Michael Schofield">
+
+<!-- Stylesheets (CSS)
+======================
+-->	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/theme/beige.css" id="theme">
+	<link rel="stylesheet" type="text/css" href="lib/css/zenburn.css" media="all">
+	<style type="text/css">
+		@font-face {
+		    font-family: 'GlyphishRegular';
+		    src: url('css/font/glyphish/glyphish-webfont.eot');
+		    src: url('css/font/glyphish/glyphish-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('css/font/glyphish/glyphish-webfont.woff') format('woff'),
+		         url('css/font/glyphish/glyphish-webfont.ttf') format('truetype'),
+		         url('css/font/glyphish/glyphish-webfont.svg#GlyphishRegular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+		.reveal h1.icon {font-family: 'GlyphishRegular';}
+	</style>
+
+<!-- JS Libraries (JS)
+======================
+--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!--Modernizr-->
+
+
+</head>
+<body>
+
+<div class="reveal">
+	<div class="state-background"></div>
+
+	<div class="slides">
+	<!-- Introduction
+	======================
+	-->	<section>
+			<h1>Future-Friendly Web Design for Libraries</span></h1>
+
+			<h2 class="fragment"> <small>presented by</small> <br> 	Michael Schofield</h2>
+
+			<h5 class="fragment"><small>
+				<a href="http://talks.ns4lib.com">talks.ns4lib.com</a>
+			</small></h5>
+		</section>
+
+		<section id="not-the-web">
+			<section>
+				<h1>Card Catalog</h1>
+				<img src="css/images/walls.png" alt="An old picture of a librarian lounging on the card catalog.">
+			</section>
+
+			<section>
+				<img src="css/images/not-the-web.png" alt="A widescreen monitor reading 'This is not the web' ">
+
+				<img src="css/images/iphone.png" alt="An apple iphone" class="fragment" style="position:absolute; left: 0;">
+
+				<img src="css/images/iphone-not-the-web.png" alt="An apple iphone with the words 'this is not the web'" class="fragment" style="position:absolute; left: 0; z-index: 1;">
+			</section>
+
+			<section>
+				<h3>The m.library Workload</h3>
+				<img src="css/images/mobile-workflow.png" alt="A graphic illustrating double the development time to maintain a separate mobile website.">
+
+				<h5>
+					<span class="fragment">2 x Work</span>
+					<span class="fragment">/ 1 x $$$</span>
+					<span class="fragment">= sad librarian</span> <br>
+					<span class="fragment"><small>and probably a terrible website</small></span>
+				</h5>
+			</section>
+
+			<section>
+				<h1 class="fragment">Quicksand</h1>
+				<img src="css/images/too-many-devices.png" alt="This graphic illustrates the drive and folly behind developing and having to maintain multiple presences on theweb.">
+			</section>
+
+			<section>
+				<h1> Design Ethically </h1>
+				<h4> Libraries on the Web are bought by taxes and tuition </h4>
+				<ul>
+					<li class="fragment">Developing for specific platforms targets only the handful that own the device.
+						<ul><li>Developing for <i>enough</i> platforms to be inclusive is costly.</li></uL>
+					</li>
+					<li class="fragment">Designing for specific screens--for instance, a desktop website and a mobile website--will inevitably miss the mark.</li>
+				</ul> <br>
+			</section>
+			<section>
+				<blockquote>It is a disservice if a library pursues a web strategy that inevitably caters to less than the majority of its patrons.</blockquote>
+			</section>
+			<section>
+				<blockquote>It is wasteful if a library pursues a web strategy that requires substantial retrofitting or a redesign more than once a year.</blockquote>
+			</section>
+
+
+			<section data-state="soothe">
+				<h1>Seek Ubiquity</h1>
+				<a href="http://www.lukew.com" title="Luke Wroblewski"><img src="css/images/lukew.jpg" alt="A picture of Luke Wroblewski sitting zen-like among a huge device lab."></a>	
+			</section>
+		</section>
+	
+	<!-- II. Future Friendly
+	======================
+	--> <section id="ffly">
+		<section>
+		<h1>Future Friend.ly <small>#FFLY</small></h1>
+		<img src="css/images/ffly.png" alt="Future Friendly"><br>
+
+		<i><a href="http://www.futurefriend.ly" title="Future Friendly Web Design">www.futurefriend.ly</a></i>
+		</section>
+
+		<section>
+		<h1>Future Friend.ly <small>#FFLY</small></h1>
+		<ol>
+			<li class="fragment">
+				<b>Anticipate disruption</b>. 
+			</li>
+			<li class="fragment">
+				<b>Laser Focus</b> 
+
+				<span class="fragment"> <small>s i m p l i f y</small></span>
+
+				<blockquote class="fragment">Focus your library service before your patrons do it for you.</blockquote>
+				
+			</li>
+			<li class="fragment">
+				<b>COPE:</b> Create once, publish everywhere
+				<ul>
+					<li> Separating <b>content</b> from <b>presentation</b> allows for reuse.
+					</li>
+				</ul>
+			</li>
+			<li class="fragment">
+				Responsive Web Design
+			</li>
+		</ol>
+	</section>
+	<section>
+
+		<blockquote>
+			Get your content ready to go anywhere because it's going to go everywhere.
+		</blockquote>
+
+		<p style="float: right;"><i><a href="http://bradfrostweb.com">Brad Frost</a></i></p>
+	</section>
+	</section>
+
+	<section id="grids">
+		<section>
+			<h1>Key Concepts: Fluidity</h1>
+			<h3>Responsive Grids</h3>
+			<h1>↓</h1>
+		</section>
+
+		<section>
+			<h1><small>Wait! What's a grid?</small> Review</h1>
+			<img src="css/images/grid.png" alt="Twitter Bootstrap's 12-Column Fluid Grid">
+		</section>
+
+		<section>
+			<h1>Rapidly Layout Your Site <small>( ... this is awesome )</small></h1>
+			<img src="css/images/grid2.png" alt="Twitter Bootstrap's 12-Column Fluid Grid">
+		</section>
+
+		<section>
+			<h1>High Calorie Grids</h1>
+			<h3>Out-of-the-Box Grids are Bloated</h3>
+			<h4> ... but Invaluable</h4>
+
+			<pre><code>
+&lt;div class="row"&gt;
+&lt;div class="eightcol first"&gt;
+	&lt;div class="carousel"&gt;
+		&lt;!--Put your slides here--&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="fourcol last"&gt;
+	&lt;aside class="welcome"&gt;
+		&lt;!--Content--&gt;
+	&lt;/aside&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+			</code></pre>
+		</section>
+		<section>
+			<h1>What is a <i>Fluid</i> Grid?</h1>
+			<img src="css/images/fluidgrid.png" alt="Luke Wroblewski's Model of Fluidity">			
+		</section>
+
+		<section>
+			<pre><code>.wrap { 
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1140px; /* <= not necessary, if you're brave */
+}
+.onecol    { width: 5.801104972%;  }       
+.twocol    { width: 14.364640883%; }       
+.threecol  { width: 22.928176794%; }       
+.fourcol   { width: 31.491712705%; }       
+.fivecol   { width: 40.055248616%; }       
+.sixcol    { width: 48.618784527%; }       
+.sevencol  { width: 57.182320438000005%; } 
+.eightcol  { width: 65.74585634900001%; } 
+.ninecol   { width: 74.30939226%; }        
+.tencol    { width: 82.87292817100001%; }  
+.elevencol { width: 91.436464082%; }       
+.twelvecol { width: 99.999999993%; }       
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, 
+.sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol { 
+	position: relative;
+	float: left; 
+	margin-left: 2.762430939%;
+}
+
+.first { margin-left: 0; }
+
+.last {	float: right; }</code></pre>
+		</section>
+
+		<section>
+			<h1>Your Library is no</h1>
+			<h2>longer a pin on the map,</h2>
+			<h3><small><u>but</u></small> your patrons expect more. </h3>	
+			<h4>A responsive grid isn't good enough.</h4>	
+			<h1>↓</h1>	
+		</section>
+
+		<section>
+			<ul>
+				<li>
+					31% of adults use their <i>phones</i> for the <u>majority</u> of their access to the web. (<a href="http://www.niemanlab.org/2012/06/new-pew-data-theres-a-good-and-growing-chance-youre-reading-this-on-your-phone/">source</a> )
+				</li>
+				<li class="fragment">
+					Preference among all age groups is shifting <i>away</i> from dekstops and latops toward mobile devices (<a href="http://www.niemanlab.org/2012/06/new-pew-data-theres-a-good-and-growing-chance-youre-reading-this-on-your-phone/">source</a>)
+				</li>
+				<li class="fragment">
+					<b>Provide eBooks?</b> Your patrons are probably reading them on their phones or high-end tablets, not e-readers (<a href="http://www.lukew.com/ff/entry.asp?1550">source</a>) <small>That is, unless they're stopped by DRM. Then, savvy users will probably just pirate them. = )</small>.
+				</li>
+			</ul>
+			<h2 class="fragment">Convinced?</h2>
+			<h1 class="fragment">Good</h1>
+
+		</section>
+
+		<section>
+			<blockquote>
+				Most of my thoughts about mobile are tied up into the promise of RWD. 
+			</blockquote>
+			<i><a style="float:right;" href="http://www.godaisies.com/">Amanda Goodman</a></i><br>	
+			<span style="float:right;">UX Librarian</span> <br>
+
+			<h1 class="fragment">This Makes Sense</h1>
+			<ol>
+				<li class="fragment">
+					Low barrier of entry. While tedious and painful, it's not too difficult to retrofit an existing site with a grid.
+				</li>
+				<li class="fragment">
+					DRY <b>content</b> <small><= biggie</small>
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<h1><s>Steal</s> from Colleagues</h1>
+			<ul>
+				<li>
+					<a href="http://blog.lib.uiowa.edu/hardinmd/">Eric Rumsey</a> lists 57 [so far ... ] higher-ed institutions, academic and public libraries with responsive sites. [<a href="http://blog.lib.uiowa.edu/hardinmd/2012/05/03/responsive-design-sites-higher-ed-libraries-notables/">here</a>]
+				</li>
+				<li>
+					<a href="http://matthew.reidsrow.com">Matthew Riedmsa</a>'s ALA talk <a href="http://matthew.reidsrow.com/articles/23">Responsive Web Design for Libraries: Get Beyond the Myth of the Mobile Web"</a>.
+				</li>
+				<li>
+					An awesome, useful, growing visual reference called <a href="http://ns4lib.com/pattern/">The Web for Libraries (Design Patterns)</a> <small> ... by me </small>
+				</li>
+			</ul>
+		</section>
+
+	</section>
+
+	<section id="mobile-first">
+		<section>
+			<h1>Key Concepts: Mobile First</h1>
+			<img src="css/images/mobile-first.png" alt="A infographic of a smartphone leading to a tablet leading to a desktop monitor.">
+		</section>
+		<section>
+			<h3>The commmitment to a mobile-first design means removing technological barriers to library access. </h3>
+			<ul>
+				<li class="fragment">Consider the lowest common denominator: a small screen with a painfully slow 3G connection at peak time.</li>
+				<li class="fragment"><b>Don't worry</b>: while mobile-first is about <i>simplification</i>, it isn't about penalizing the patron with the retina macbook.</li>
+			</ul>
+						<h1 class="fragment">Progressive Enhancement <small>yahtzee!</small></h1>
+		</section>
+
+		<section>
+			<h3>Mobile-First Makes for Better <b>Content</b></h3>
+
+			<h4 class="fragment">... which is good, because mobile patrons can be a little picky</h4>
+
+			<ul>
+				<li class="fragment">71% of people expect mobile sites to load as fast <i>or faster</i> <small>(really!? - <b>yep</b>)</small> than stationary desktops</li>
+				<li class="fragment">74% will abandon your site if it takes more than 4 seconds to load.</li>
+				<li class="fragment">Mobile browsers will choose not to load content that is too large.</li>
+				<li class="fragment">Blackberries will not load websites larger than 3MB (Error 413: Entity too large)</li>
+				<li class="fragment">Many international data plans are <b>pay per kilobyte</b></li>
+				<li class="fragment">Unlimited data in the U.S. is endangered. <small>Design Accordingly</small></li>
+			</ul>
+
+		</section>
+
+		<section>
+			<h1>Anatomy of a Mobile-First Stylesheet</h1>
+			<pre><code>
+@media only screen and (min-width: /* your breakpoint */ ;) {
+	/* your styles */
+}			</code></pre>
+		</section>
+
+		<section>
+			<h3>Embrace the Cascade</h3>
+			<ol>
+				<li class="fragment">
+					Load your base (mobile) styles first. Keep them light-weight. Hover effects aren't necessary.
+				</li>
+				<li class="fragment">
+					Load subsequent styles for increasingly larger devices in media queries. 
+				</li>
+				<li class="fragment">
+					Common breakpoints are <b>480px</b> (large mobile screens, e.g. iPhone 5 in Landscape), <b>768px</b> (Tablets and small laptops), <b>1024px</b> (some desktops, but most often those old square monitors), <b>1240px +</b> (large[-ish] / widescreen).
+				</li>
+			</ol>
+			<h1 class="fragment">Wait <small>this is latin</small></h1>
+		</section>
+
+		<section>
+<h1>The Cascade <small>Review</small></h1>
+<h3><b>Cascading</b> Style Sheet</h3>
+			<pre><code>
+body {
+	width: 100px;
+	width: 20%;
+	width: -999999999999px;
+	width: 98%; /* <= bottom of the cascade */
+}				
+			</code></pre>
+		</section>
+
+		<section>
+			<h1>Breakpoints <small>Review</small> </h1>
+			<h3>Target a device by its screen size</h3>
+			<h5>This way ..., it's kind of a lot</h5>
+			<h1>↓</h1>	
+		</section>
+		<section>
+			<pre><code>
+/* ====================
+ * Phones
+ * ==================== */
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 480px) { /* Styles */ }
+
+/* ====================
+ * Large Phones, Small Tablets
+ * ==================== */
+@media only screen and (min-width: 481px) { /* Styles */} 
+
+/* ====================
+ * Tablets and Small Laptops
+ * ==================== */
+ @media only screen and (min-width: 768px) { /* Styles */ }
+
+/* ====================
+ * Desktops and Laptops
+ * ==================== */ 
+@media only screen and (min-width: 1030px) { /* Styles */ }
+
+/* ====================
+ * Large Screens
+ * ==================== */
+@media only screen and (min-width: 1240px) { /*Styles */ }
+			</code></pre>
+		</section>
+		<section>
+		<h3>... or target dense pixel devices <small>Neat = )</small></h3>
+		<pre><code>
+/* ====================
+ * Retina Displays
+ - This applies to the retina iPhone (4s) and 
+ - iPad (2, 3) along with other displays with 
+ - a 2x resolution. 
+ * ==================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (mix-device-pixel-ratio: 1.5) { /* Styles */ } 		
+		</code></pre>
+		</section>
+
+		<section>
+			<h3>So, where was I ... ?</h3>
+			<h1>Oh Yes!</h1>
+			<h1>↓</h1>	
+		</section>
+
+		<section>
+			<pre><code>
+/* ====================
+ * Mobile 1st Stylesheet!
+ * ==================== */
+<b>.embrace-the-cascade</b> {
+	<b>tip</b>: write your most light-weight, basic
+	styles at the top of your CSS. Be simple. You
+	want them to load fast for mobile. Hover effects
+	are unnecessary. 
+}
+
+/* ====================
+ * Large Phones, Small Tablets
+ * ==================== */
+@media only screen and (min-width: 481px) { 
+<b>.embrace-the-cascade</b> {
+	<b>tip</b>: keep everything else inside media
+	queries. You can get fancier as the screens get
+	bigger. 
+} 
+
+/* ====================
+ * Tablets and Small Laptops
+ * ==================== */
+ @media only screen and (min-width: 768px) { 
+<b>.embrace-the-cascade</b> {
+	<b>tip</b>: I usually load my grid at this point.
+ } /* Are you getting it? */
+			</code></pre>
+		</section>
+
+		<section>
+			<h3>What about <b>Internet Explorer 8</b>? <small>sigh</small></h3>
+			<h1>Polyfills</h1>
+			<blockquote>
+				A polyfill ... is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
+			</blockquote>
+			<p style="float: right;"><i><a href="http://remysharp.com/">Remy Sharp</a></i></p>
+			<h2>Fake it with Javascript <small>but fake smartly</small></h2>
+		</section>
+
+		<section>
+			<p style="text-align: left;">The vocabulary around mobile-first design is oriented around <b>weight.</b> As in, the more code you write the heavier your library's website. <span class="fragment">If you make your users carry a brick, it is inevitable that many will drop it.</span></p>
+
+			<h1 class="fragment">Good Performance is Good Design</h1>
+		</section>
+	</section>
+
+	<section id="performance">
+		<section>
+			<h1>Key Concepts: Performance</h1>
+			<h3><s>Best</s> Really Good Practices</h3>
+			<h1>↓</h1>
+		</section>
+		<section>
+			<h1><small>The main thing is</small> ease-up off the server</h1>
+			<ul>
+				<li class="fragment">Limit the Number of HTTP Requests</li>
+			</ul>
+<pre class="fragment"><code>
+&lt;!-- Stylesheets (CSS)
+======================
+--&gt; &lt;link rel="stylesheet" type="text/css" href="styles.css" media="all"&gt;
+
+&lt;!-- Javascript (JS)
+======================
+--&gt; &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"&gt;</script>
+
+&lt;!-- Media
+======================
+--&gt; &lt;img src="icon.jpg" alt="huge icon"&gt;	
+	&lt;audio&gt;&lt;/audio&gt;
+	&lt;video&gt;&lt;/video&gt;
+</code></pre>
+		</section>
+		<section>
+			<h2>Quick Fixes</h2>
+			<ul>
+				<li>Follow <a href="http://css-tricks.net">Chris Coyier's</a> <b>1-2-3 Rule</b> of CSS</li>
+				<li>Use Web Type and Common CDNs</li>
+				<li>Turn all static graphics into a Sprite! (<a href="http://www.spritecow.com">Sprite Cow</a>)</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Every little image is a chance to fail <small>that's being kind of dramatic</small> but you get me</h3>
+			<pre><code>
+&lt;nav class="menu"&gt;
+	&lt;ul&gt;
+		&lt;li&gt; &lt;img src="icon.jpg"&gt; Books &lt;/li&gt;
+		&lt;li&gt; &lt;img src="icon.jpg"&gt; Databases &lt;/li&gt;
+		&lt;li&gt; &lt;img src="icon.jpg"&gt; Ask a Librarian &lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;				
+			</code></pre>
+			<h1>Take Advantage of Modern Browsers</h1>
+		</section>
+		<section>
+			<h1>Shadows <small>instead of graphics</small></h1>
+
+			<div style="margin: 0 auto; background-color:#50AFDF; width: 150px; height: 150px; -webkit-box-shadow: 2px 2px 4px #333; -moz-box-shadow: 2px 2px 4px #333; box-shadow: 2px 2px 4px #333; "></div> <br> 	
+
+			<pre><code>-webkit-box-shadow: 2px 2px 4px #333;
+-moz-box-shadow: 2px 2px 4px #333;
+box-shadow: 2px 2px 4px #333;</code> </pre>
+
+		</section>
+
+		<section>
+			<h1>Gradients <small>instead of graphics</small></h1>
+			<div style="height: 100px; width: 100%; background: -moz-linear-gradient(top, #006699 0%, #50afdf 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006699), color-stop(100%,#50afdf)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #006699 0%,#50afdf 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #006699 0%,#50afdf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #006699 0%,#50afdf 100%); /* IE10+ */
+background: linear-gradient(to bottom, #006699 0%,#50afdf 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006699', endColorstr='#50afdf',GradientType=0 ); /* IE6-9 */"></div><br>
+
+<pre><code>background: -moz-linear-gradient(top, #006699 0%, #50afdf 100%); /* FF3.6+ */
+background: -webkit-linear-gradient(top, #006699 0%,#50afdf 100%); /* Chrome, Safari */
+background: -o-linear-gradient(top, #006699 0%,#50afdf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #006699 0%,#50afdf 100%); /* IE10+ */
+background: linear-gradient(to bottom, #006699 0%,#50afdf 100%); /* Eventual Standard */</code></pre>
+		</section>
+
+		<section>
+			<h1>Transitions <small>Instead of JS, .GIFs, or <s>FLASH</s></small></h1>
+<pre class="codepen" data-height="150" data-type="result" data-href="Iwydo" data-user="michaelschofield"><code></code></pre>
+<script async src="http://codepen.io:/assets/embed/ei.js"></script>
+
+<pre><code>.switch {
+	transition: left .2s ease;
+}
+.toggle-bg input:checked~.switch { left: -1px; }
+.toggle-bg input~:checked~.switch { left: 41px; }
+
+/* This lives at http://codepen.io/michaelschofield/ - 
+but it isn't very impressive =/ */
+</code></pre>
+		</section>
+
+		<section>
+			<h1><small>Sprites are Good, but</small> Icon Fonts <small>are Gold</small></h1>
+
+			<p>
+					An icon font is a <b>dingbats</b>-like font where vector graphics replace usual characters - like the letter <i><b>c</b></i>. 
+			</p>
+			<h1 class="icon">ab<span style="font-size:1.5em">c</span>de</h1>
+		</section>
+
+		<section>
+			<h1 class="icon">ab<span style="font-size:1.5em">c</span>de</h1>
+			<pre><code>@font-face {
+    font-family: 'GlyphishRegular';
+    src: url('css/font/glyphish/glyphish-webfont.eot');
+    src: url('css/font/glyphish/glyphish-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/font/glyphish/glyphish-webfont.woff') format('woff'),
+         url('css/font/glyphish/glyphish-webfont.ttf') format('truetype'),
+         url('css/font/glyphish/glyphish-webfont.svg#GlyphishRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1.icon {font-family: 'GlyphishRegular';}</code></pre>
+<pre><code>
+&lt;h1 class="icon"&gt;abcde&lt;/h1&gt;
+</code></pre>
+		</section>
+
+		<section>
+			<h3>The Joy of <s>Cooking</s> Semantic HTML and CSS</h3>
+			<ul>
+				<li>The point is that complex designs that once relied on many graphics, are additional requests from a server, can be paired down to just one - the call to your CSS.</li>
+
+				<li>Use javascript to enhance the experience or replicate modern CSS with polyfills for older browsers <small>look at your analytics, because you might just want to pull a Google and drop IE8 altogether</small>.</li>
+
+				<li>The elephant in the room? </li>
+			</ul>
+			<h1>Resolution Independence</h1>
+		</section>
+
+		<section>
+			<h1>The Retina Problem</h1>
+			<img src="css/images/focus.jpg" alt="Out of focus Christmas Lights">
+		</section>
+		<section>
+			<h1>Looking Sharp!</h1>
+			<ul>
+				<li>
+					The knee-jerk reaction to retina was to make design graphics <b>"@2x"</b> Twice as big as they would be displayed. <b>Not simple math:</b> a 300px wide image is 120KB. At 600px wide? <i>406KB</i>
+				</li>
+				<li>Inevitably pixels will be even more densely packed, making @2x graphics fuzzy.</li>
+			</ul>
+
+			<blockquote>
+				 “Because it looks pretty” is not a good enough reason to send a 1MB image over 3G—or, god forbid, something like the EDGE network.
+			</blockquote>
+			<p style="float:right;"><a href="http://www.alistapart.com/articles/mo-pixels-mo-problems/">Dave Rupert</a></p>
+
+		</section>
+
+		<section>
+			<h1>Responsive Images</h1>
+			<h3>No Easy Solutions</h3>
+			<h5>Javascript and Headaches</h5>
+		</section>
+
+	</section>
+
+	<section>
+		<h2><small>The</small> ubiquity of the web <small>challenges the library's mission to be</small> accessible <small>to its community</small></h2>
+		<ul>
+			<li>Anticipate weird web-ready devices and make <b>fluid content</b></li>
+			<li>Be accessible to the widest array possible users and <b>design mobile-first.</b></li>
+			<li>Build a virtual library that <b>first performs well</b> and only second looks great.</li>
+		</ul>
+
+
+	</section>
+
+</div>
+
+<!-- Controls
+======================
+-->	<aside class="controls">
+		<a class="left" href="#">&#x25C4;</a>
+		<a class="right" href="#">&#x25BA;</a>
+		<a class="up" href="#">&#x25B2;</a>
+		<a class="down" href="#">&#x25BC;</a>
+	</aside>
+
+<!-- Progress Bar
+======================
+-->	<div class="progress"> <span></span> </div>
+
+</div><!--End of Presentation-->
+
+<!-- Javascript
+======================
+--> <script type="text/javascript" src="lib/js/head.min.js"></script>
+	<script type="text/javascript" src="js/reveal.min.js"></script>
+	<script type="text/javascript">
+
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: false,
+			keyboard: true,
+			overview: true,
+			loop: false,
+			autoSlide: 0,
+			mouseWheel: true,
+			rollingLinks: false,
+			transition: 'linear',
+			theme: 'beige',
+
+			dependencies: [
+				{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			]
+		});
+
+	</script>
+
+</body>
+</html>
